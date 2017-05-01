@@ -11,14 +11,14 @@ class MathArt extends Component {
     componentWillMount() {
     }
     componentDidMount() {
-        var $this = $(ReactDOM.findDOMNode(this));
+        //var $this = $(ReactDOM.findDOMNode(this));
         StartDraw()
         this.state = ({loaded : true})
 
     }
     render() {
-
         return (
+            
             <div >        <canvas id='canvas'></canvas> 
                 {this.state.loaded ? StartDraw() : ""}
                     
