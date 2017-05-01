@@ -22,9 +22,9 @@ class NavBar extends Component {
         }
         return (
                 <nav className="myNav">
-                    <div className="container-fluid">
+                    <div>
                         <div id="myNavbar">
-                            <ul className="nav navbar-nav">
+                            <ul >
                                 <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/'>Home</IndexLink>&nbsp;
                                 <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/about'>About</IndexLink>&nbsp;
                                 <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/services'>Services</IndexLink>&nbsp;
