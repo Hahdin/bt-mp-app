@@ -16,7 +16,7 @@ class NavBar extends Component {
         var aStyle = {
             color: 'black',
             backgroundColor: 'white',
-            textShadow: '-2px -2px 10px blue',
+            textShadow: '-2px -2px 10px black',
             textDecoration: 'none',
             padding: '5px'
         }
