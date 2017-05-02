@@ -71,7 +71,6 @@ class App extends Component {
 
 
     render() {
-        //ClearTimers();
         return (
             <Router history={hashHistory}>
                 <Route path='/' component={Container}>

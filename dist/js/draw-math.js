@@ -11,9 +11,17 @@ function LineTo(x1, y1, x2, y2) {
     ctx.stroke();
 }
 
-var StartDraw = () => {
+var ClearTimers = () => {
     clearInterval(drawTimerInterval)
     clearInterval(fadeTimerInterval)
+    canvas = null
+    console.log('cleared')
+
+}
+
+
+var StartDraw = () => {
+    ClearTimers()
     canvas = document.getElementById("canvas")
     if (canvas == null || canvas == undefined) return
 

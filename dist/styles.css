@@ -145,8 +145,8 @@ h4 {
     }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: black !important;
-    background-color: #fff !important;
+    color: white !important;
+    background-color: grey !important;
 }
 
 .navbar-default .navbar-toggle {
@@ -238,19 +238,19 @@ footer .glyphicon {
     text-decoration: none;
 }
 
-.ilink {
-    color: white;
-    font-size: 30px;
+.ilink{
+    color: blue;
+    font-size: 20px;
     text-shadow: 1px 1px 1px black;
-    padding: 10px;
+    box-shadow: 3px 3px 3px white;
+    border-radius: 15px;
 }
-.ilink:hover {
-    color: yellow;
+.ilink:hover, .ilink li:hover {
     text-shadow: 3px 3px 5px red;
     text-decoration: none;
 }
-.ilink:active {
-    color: greenyellow;
+.ilink:active, .ilink li:active {
     text-shadow: 3px 3px 5px white;
     text-decoration: none;
+    color: #2e0321;
 }

@@ -14,25 +14,33 @@ class NavBar extends Component {
 
     render() {
         var aStyle = {
-            color: 'black',
-            backgroundColor: 'white',
-            textShadow: '-2px -2px 10px black',
+            backgroundColor: '#2e0321',
+            textShadow: '-2px -2px 3px black',
             textDecoration: 'none',
-            padding: '5px'
+            padding: '20px'
         }
         return (
-                <nav className="myNav navbar">
-                    <div>
-                    <div id="myNavbar" className="navbar-collapse">
-                            <ul >
-                                <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/'>Home</IndexLink>&nbsp;
-                                <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/about'>About</IndexLink>&nbsp;
-                                <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/services'>Services</IndexLink>&nbsp;
-                                <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/mathart'>Math Art</IndexLink>&nbsp;
-                            </ul>
-                        </div>
+            <nav className="myNav navbar navbar-default navbar-fixed-top">
+                <div className="container-fluid">
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </button>
+                        <a className="navbar-brand" href="/">BlackToque</a>
                     </div>
-                </nav>
+                    <div id="myNavbar" className="collapse navbar-collapse">
+                        <ul className="nav navbar-nav navbar-right">
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/'>Home</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/about' onClick={ClearTimers()} >About</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/services'>Services</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/mathart'>Math Art</IndexLink></li>&nbsp;
+                        </ul>
+                    </div>
+                </div>
+            </nav>
          )
     }
  }
