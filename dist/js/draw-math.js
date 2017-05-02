@@ -25,7 +25,7 @@ var StartDraw = () => {
     ctx.fillRect(0, 0, cnvW, cnvH);
 
     var circles = []//make something to draw
-    for (var i = 0; i < 30; i++) {
+    for (var i = 0; i < 50; i++) {
         circles.push(new create_circle())
     }
 
@@ -33,7 +33,7 @@ var StartDraw = () => {
         //Random position on the canvas
         this.x = Math.random() * cnvW;
         this.y = Math.random() * cnvH;
-        var u = 1.025;        var q = 0.03;
+        var u = 1.25;        var q = 0.01;
         //velocities
         this.vx = Math.random() * u - (u / 2);        this.vy = Math.random() * u - (u / 2);
         this.veerx = Math.random() * q - (q / 2);        this.veery = Math.random() * q - (q / 2);
@@ -46,7 +46,7 @@ var StartDraw = () => {
         clr(); this.clr9 = hslaclr; clr(); this.clr11 = hslaclr;
         clr(); this.clr9 = hslaclr; clr(); this.clr12 = hslaclr;
         //Random size
-        this.radius = Math.random() * cnvW / 10 + 30;
+        this.radius = Math.random() * cnvW / 30 + 30;
         this.angle = Math.round(Math.random() * 360);
         var inc = Math.PI / 3;
         this.inc = Math.random() * inc;

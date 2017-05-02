@@ -21,9 +21,9 @@ class NavBar extends Component {
             padding: '5px'
         }
         return (
-                <nav className="myNav">
+                <nav className="myNav navbar">
                     <div>
-                        <div id="myNavbar">
+                    <div id="myNavbar" className="navbar-collapse">
                             <ul >
                                 <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/'>Home</IndexLink>&nbsp;
                                 <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/about'>About</IndexLink>&nbsp;
