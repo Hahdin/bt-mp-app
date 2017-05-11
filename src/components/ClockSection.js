@@ -18,7 +18,7 @@ class ClockSection extends Component {
     render() {
         ani = true;
         return (
-            <div className='container'>
+            <div >
                 {this.state.loaded ? StartClock() : ''}
                 <div id='clockdiv' ></div>
             </div>)
