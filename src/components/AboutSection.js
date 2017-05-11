@@ -25,7 +25,8 @@ class AboutSection extends Component {
                            This is an example of a Multi Page Application. Most sections (About, Services, etc) are created as
                            <a style={sty} href="https://github.com/facebook/react"> React components</a>.  Rather than the main App composing the final render,
                            as in an SPA, this is using React's <a style={sty}  href="https://github.com/ReactTraining/react-router"> Router</a> to render individual components 
-                               on a page.
+                               on a page. 
+                           <p className="well">For an example of an Single Page Application using this template see <a href="https://ex0001.herokuapp.com/"> BlackToque - SPA </a></p>
                            The theme is based on a <a style={sty} href="https://www.w3schools.com/bootstrap/bootstrap_theme_company.asp" target="_blank"> Bootstrap template for a company.</a>
                                 The Application Framework is <a style={sty} href="https://expressjs.com/" target="_blank"> Express 4.15.2</a> for
                                    <a style={sty} href="https://nodejs.org/en/" target='_blank'> Node.js</a>
