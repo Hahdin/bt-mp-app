@@ -163,7 +163,7 @@ function init() {
     render.name = 'renderer'
     renderer.setPixelRatio(window.devicePixelRatio);
 
-    renderer.setSize(window.innerWidth-10, window.innerHeight-10);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
     renderer.shadowMap.enabled = true;
 
@@ -342,7 +342,7 @@ function onWindowResize() {
 
     camera.updateProjectionMatrix();
 
-    renderer.setSize(window.innerWidth - 10, window.innerHeight-10);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
 }
 
