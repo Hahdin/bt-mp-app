@@ -29,19 +29,83 @@ class NavBar extends Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href="/">BlackToque</a>
+                        <div id="navhome" className="w3-ravi">
+                            <a className="navbar-brand " href="/" >BlackToque</a>
+                        </div>
                     </div>
                     <div id="myNavbar" className="collapse navbar-collapse">
                         <ul className="nav navbar-nav navbar-right">
                             <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/'>Home</IndexLink></li>&nbsp;
-                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/about' onClick={ClearTimers()} >About</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/about' onClick={clearAll()} >About</IndexLink></li>&nbsp;
                             <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/services'>Services</IndexLink></li>&nbsp;
                             <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/mathart'>Math Art</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/ripple'>Water</IndexLink></li>&nbsp;
+                            <li>
+                                <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/clock'>3D Clock</IndexLink>
+                            </li>&nbsp;
+
+                            
                         </ul>
                     </div>
                 </div>
             </nav>
+
          )
     }
  }
 export default NavBar
+{/*
+        return (
+            <div>
+                <nav className="myNav navbar navbar-default navbar-fixed-top">
+                    <div className="btn-group">
+                        <button type="button" className="btn btn-primary">Apple</button>
+                        <button type="button" className="btn btn-primary">Samsung</button>
+                        <div className="btn-group">
+                            <button type="button" className="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Sony <span className="caret"></span></button>
+                            <ul className="dropdown-menu" role="menu">
+                                <li><a href="#">Tablet</a></li>
+                                <li><a href="#">Smartphone</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+
+
+
+    <nav className="myNav navbar navbar-default navbar-fixed-top">
+                <div className="container-fluid">
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </button>
+                        <div id="navhome" className="w3-ravi">
+                            <a className="navbar-brand " href="/" >BlackToque</a>
+                        </div>
+                    </div>
+                    <div id="myNavbar" className="collapse navbar-collapse">
+                        <ul className="nav navbar-nav navbar-right">
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/'>Home</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/about' onClick={clearAll()} >About</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/services'>Services</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/mathart'>Math Art</IndexLink></li>&nbsp;
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/ripple'>Water</IndexLink></li>&nbsp;
+                            <li>
+                                <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/clock'>3D Clock</IndexLink>
+                            </li>&nbsp;
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+*/}

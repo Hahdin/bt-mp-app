@@ -53,6 +53,9 @@ import ContactSection from './ContactSection'
 import GoogleMapSection from './GoogleMapSection'
 import NavBar from './NavBar'
 import MathArt from './MathArt'
+import RippleSection from './RippleSection'
+import ClockSection from './ClockSection'
+
 class App extends Component {
     constructor(props, context) {
         super(props, context)
@@ -78,6 +81,8 @@ class App extends Component {
                     <Route path='/about(/:name)' component={AboutSection} />
                     <Route path='/services' component={ServicesSection} />
                     <Route path='/mathart' component={MathArt} />
+                    <Route path='/ripple' component={RippleSection} />
+                    <Route path='/clock' component={ClockSection} />
                     <Route path='*' component={NotFound} />
                 </Route>
             </Router>

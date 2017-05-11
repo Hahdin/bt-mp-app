@@ -20,6 +20,13 @@ h4 {
     margin-bottom: 30px;
 }
 
+nav a {
+    margin: 12px;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-shadow: 1px 1px 5px black;
+}
+
 .jumbotron {
     background-color: black;
     color: #fff;
@@ -240,10 +247,10 @@ footer .glyphicon {
 
 .ilink{
     color: blue;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: 1px 1px 1px black;
-    box-shadow: 3px 3px 3px white;
-    border-radius: 15px;
+    box-shadow: 5px 5px 8px white;
+    border-radius: 10px;
 }
 .ilink:hover, .ilink li:hover {
     text-shadow: 3px 3px 5px red;
@@ -254,3 +261,94 @@ footer .glyphicon {
     text-decoration: none;
     color: #2e0321;
 }
+
+.w3-ravi {
+    font-family: "Ravi Prakash", serif;
+}
+
+.w3-tangerine {
+    font-family: "Tangerine", serif;
+}
+
+.w3-josefin {
+    font-family: "Josefin Sans", latin;
+    font-size: 18px;
+}
+
+.w3-josefin a,
+.w3-tangerine a,
+.w3-ravi a    {
+    color: blue;
+}
+#clockdiv {
+    text-align: center;
+}
+#center-div {
+    text-align: center;
+}
+
+#navhome a {
+    font-size: 50px;
+    font-weight: bolder;
+    animation-name: navhome-ani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+@keyframes navhome-ani {
+    0% {
+        text-shadow: 1px 1px 1px white;
+    }
+    25% {
+        text-shadow: 25px 25px 25px white;
+    }
+    50% {
+        text-shadow: 50px 50px 50px white;
+    }
+    75% {
+        text-shadow: 75px 75px 75px white;
+    }
+    100% {
+        text-shadow: 100px 100px 100px white;
+    }
+}
+
+/*
+@keyframes navhome-ani {
+    0% {
+        text-shadow: 2px 2px 1px red;
+    }
+
+    20% {
+        text-shadow: 5px 5px 5px orange;
+    }
+
+    30% {
+        text-shadow: 7px 7px 10px yellow;
+    }
+
+    40% {
+        text-shadow: 10px 10px 20px green;
+    }
+    50% {
+        text-shadow: 15px 15px 30px blue;
+    }
+    60% {
+        text-shadow: 15px 15px 30px blue;
+    }
+    70% {
+        text-shadow: 10px 10px 20px purple;
+    }
+    80% {
+        text-shadow: 7px 7px 10px red;
+    }
+    90% {
+        text-shadow: 5px 5px 5px blue;
+    }
+    100% {
+        text-shadow: 2px 2px 1px green;
+    }
+    
+}
+    */

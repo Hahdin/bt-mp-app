@@ -2,15 +2,35 @@
 
 class AboutSection extends Component {
     render() {
-        return (<div>
+        var sty = {
+            color: 'blue',
+            fontSize: '17px',
+
+        }
+       return (<div>
             <div id="about" className="container-fluid">
                 <div className="row">
                     <div className="col-sm-8">
                         <h2>About BlackToque Software</h2><br />
                         <img src="/images/BT.jpg"/>
                         <h4>We make Apps</h4><br />
-                        <p>Need an App? How about a SPA for your small business or organization? Look no further!</p>
                         <br /><button className="btn btn-default btn-lg">Get in Touch</button>
+                    </div>
+                    <div id="intromsg" className="w3-panel w3-josefin">
+                        <p>
+                            This site serves to showcase examples of various techniques used in the production of web applications. There are
+                                   many different technologies used today, each depending on the expectations and needs of the client base.
+                       </p>
+                        <p>
+                           This is an example of a Multi Page Application. Most sections (About, Services, etc) are created as
+                           <a style={sty} href="https://github.com/facebook/react"> React components</a>.  Rather than the main App composing the final render,
+                           as in an SPA, this is using React's <a style={sty}  href="https://github.com/ReactTraining/react-router"> Router</a> to render individual components 
+                               on a page.
+                           The theme is based on a <a style={sty} href="https://www.w3schools.com/bootstrap/bootstrap_theme_company.asp" target="_blank"> Bootstrap template for a company.</a>
+                                The Application Framework is <a style={sty} href="https://expressjs.com/" target="_blank"> Express 4.15.2</a> for
+                                   <a style={sty} href="https://nodejs.org/en/" target='_blank'> Node.js</a>
+                        </p>
+
                     </div>
                     <div className="col-sm-4">
                         <span className="glyphicon glyphicon-signal logo"></span>

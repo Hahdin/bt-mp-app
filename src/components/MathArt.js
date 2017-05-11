@@ -16,12 +16,20 @@ class MathArt extends Component {
         this.state = ({loaded : true})
 
     }
+    test() {
+       // alert('here')
+        console.log('test')
+
+    }
+
     render() {
         return (
-            
-            <div >        <canvas id='canvas'></canvas> 
-                {this.state.loaded ? StartDraw() : ""}
-                    
+            <div >
+                <div  className="w3-panel w3-josefin">
+                    This is an example of drawing with JavaScript on the <a href="https://www.w3schools.com/html/html5_canvas.asp"> HTML5 Canvas.</a>
+                </div>
+                <canvas id='canvas'></canvas> 
+            {this.state.loaded ? StartDraw() : ''}
             </div>)
     }
 }

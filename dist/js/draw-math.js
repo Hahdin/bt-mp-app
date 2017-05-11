@@ -12,6 +12,7 @@ function LineTo(x1, y1, x2, y2) {
 }
 
 var ClearTimers = () => {
+    ClearRippleTimers();
     clearInterval(drawTimerInterval)
     clearInterval(fadeTimerInterval)
     canvas = null
@@ -41,10 +42,11 @@ var StartDraw = () => {
         //Random position on the canvas
         this.x = Math.random() * cnvW;
         this.y = Math.random() * cnvH;
-        var u = 1.25;        var q = 0.01;
+        var u = 0.1;        var q = 0.01;
         //velocities
         this.vx = Math.random() * u - (u / 2);        this.vy = Math.random() * u - (u / 2);
-        this.veerx = Math.random() * q - (q / 2);        this.veery = Math.random() * q - (q / 2);
+       // this.veerx = Math.random() * q - (q / 2); this.veery = Math.random() * q - (q / 2);
+        this.veerx = q - (q / 2); this.veery =  q - (q / 2);
         //Random colors
         clr(); this.clr1 = hslaclr; clr(); this.clr2 = hslaclr;
         clr(); this.clr3 = hslaclr; clr(); this.clr4 = hslaclr;
@@ -54,7 +56,7 @@ var StartDraw = () => {
         clr(); this.clr9 = hslaclr; clr(); this.clr11 = hslaclr;
         clr(); this.clr9 = hslaclr; clr(); this.clr12 = hslaclr;
         //Random size
-        this.radius = Math.random() * cnvW / 30 + 30;
+        this.radius = Math.random() * cnvW / 20 + 30;
         this.angle = Math.round(Math.random() * 360);
         var inc = Math.PI / 3;
         this.inc = Math.random() * inc;
@@ -96,7 +98,7 @@ var StartDraw = () => {
             if (c.angle < 0) c.angle = 360 + c.angle;
             ctx.beginPath();
         }
-   }
+    }
 
     function fade() {
         ctxfade("rgba(255,255,255, 0.05)");
