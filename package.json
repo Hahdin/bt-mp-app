@@ -1,7 +1,7 @@
 {
-  "name": "las-json",
+  "name": "bt-mpa",
   "version": "1.0.0",
-  "description": "React App that loads a JSON file and formats it to tables",
+  "description": "Multi Page Web App Demo",
   "main": "server.js",
     "scripts": {
         "build": "webpack --config webpack.prod.config.js",

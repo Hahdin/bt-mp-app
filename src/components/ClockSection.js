@@ -10,7 +10,6 @@ class ClockSection extends Component {
     }
     componentDidMount() {
         StartClock()
-        //alert('start clock')
         this.state = ({ loaded: true })
 
     }
@@ -19,7 +18,6 @@ class ClockSection extends Component {
         ani = true;
         return (
             <div >
-                {this.state.loaded ? StartClock() : ''}
                 <div id='clockdiv' ></div>
             </div>)
     }
