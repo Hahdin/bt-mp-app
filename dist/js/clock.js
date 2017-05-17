@@ -1,7 +1,6 @@
-﻿//if (!Detector.webgl) Detector.addGetWebGLMessage();
-console.log("clock")
+﻿if (!Detector.webgl) Detector.addGetWebGLMessage();
+//console.log("clock")
 var camera, scene, renderer, stats, controls;
-
 //point lights
 var p1, p2, p3, p4, p5, p6, prot, pmoon;
 var loaded = false;
@@ -9,20 +8,16 @@ var loaded = false;
 var textGeometry, textMaterial, txtmesh = -1;
 var loader = new THREE.FontLoader();
 var TheFont;
-
 //sec ring
 var ORmat, g2, t2;
 //min ring
 var Mmat, buf2, mesh2;
 //hour ring
 var Hmat, buf3, mesh3;
-
 //milli ring
 var milimat, buf4, mesh4;
-
 //mirror
 var verticalMirror, groundMirror;
-
 //text
 var loader = new THREE.FontLoader();
 var mintimer;
@@ -37,7 +32,7 @@ function clearAll() {
     clearInterval(fadeTimerInterval)
     canvas = null
     ani = false
-    console.log('cleared all')
+   // console.log('cleared all')
 
 }
 
@@ -84,17 +79,11 @@ function init() {
     //document.body.removeChild(renderer.domElement);
 
     // MIRROR planes
-
     groundMirror = new THREE.Mirror(renderer, camera, { clipBias: 0.003, textureWidth: window.innerWidth, textureHeight: window.innerHeight, color: 0x777777 });
-
     var mirrorMesh = new THREE.Mesh(planeGeo, groundMirror.material);
-
     mirrorMesh.add(groundMirror);
-
     mirrorMesh.rotateX(- Math.PI / 2);
-
     mirrorMesh.position.y = -mirrorsize / 2;
-
     scene.add(mirrorMesh);
 
     verticalMirror = new THREE.Mirror(renderer, camera, { clipBias: 0.003, textureWidth: window.innerWidth, textureHeight: window.innerHeight, color: 0x889999 });
@@ -315,7 +304,7 @@ function AddTorusRing(radius, tube, radialSegments, tubularSegments, color, shin
 function animate() {
     if (!ani)
         return;
-    console.log('animate')
+    //console.log('animate')
     requestAnimationFrame(animate);
 
     var d = new Date();

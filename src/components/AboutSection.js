@@ -7,12 +7,12 @@ class AboutSection extends Component {
             fontSize: '17px',
 
         }
-       return (<div>
+       return (<div id='myPage'>
             <div id="about" className="container-fluid">
                 <div className="row">
-                    <div className="col-sm-8">
+                    <div  id='logo'>
                         <h2>About BlackToque Software</h2><br />
-                        <img src="/images/BT.jpg"/>
+                        <img id='logoimg' src="/images/BT.jpg"/>
                         <h4>We make Apps</h4><br />
                         <br /><button className="btn btn-default btn-lg">Get in Touch</button>
                     </div>

@@ -16,7 +16,7 @@ var ClearTimers = () => {
     clearInterval(drawTimerInterval)
     clearInterval(fadeTimerInterval)
     canvas = null
-    console.log('cleared')
+    //console.log('cleared')
 
 }
 
@@ -29,7 +29,6 @@ var StartDraw = () => {
     cnvW = canvas.width = window.innerWidth - 100
     cnvH = canvas.height = window.innerHeight - 350
     ctx = canvas.getContext("2d")
-    //ctx.fillStyle = "rgba(200, 200, 100, 1)";
     ctx.fillStyle = 'white';
     ctx.fillRect(0, 0, cnvW, cnvH);
 
@@ -45,7 +44,6 @@ var StartDraw = () => {
         var u = 0.1;        var q = 0.01;
         //velocities
         this.vx = Math.random() * u - (u / 2);        this.vy = Math.random() * u - (u / 2);
-       // this.veerx = Math.random() * q - (q / 2); this.veery = Math.random() * q - (q / 2);
         this.veerx = q - (q / 2); this.veery =  q - (q / 2);
         //Random colors
         clr(); this.clr1 = hslaclr; clr(); this.clr2 = hslaclr;

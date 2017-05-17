@@ -2,13 +2,12 @@ import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 import Jumbo from './Jumbo'
 import AboutSection from './AboutSection'
-import FooterSection from './FooterSection'
 import ServicesSection from './ServicesSection'
-import ContactSection from './ContactSection'
 import NavBar from './NavBar'
 import MathArt from './MathArt'
 import RippleSection from './RippleSection'
-import ClockSection from './ClockSection'   
+import ClockSection from './ClockSection'
+import SurveySection from './SurveySection'
 
 class App extends Component {
     constructor(props, context) {

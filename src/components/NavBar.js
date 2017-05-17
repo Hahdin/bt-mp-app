@@ -37,10 +37,8 @@ class NavBar extends Component {
                             <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/services'>Services</IndexLink></li>&nbsp;
                             <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/mathart'>Math Art</IndexLink></li>&nbsp;
                             <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/ripple'>Water</IndexLink></li>&nbsp;
-                            <li>
-                                <IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/clock'>3D Clock</IndexLink>
-                            </li>&nbsp;
-                        </ul>
+                            <li><IndexLink className='ilink' activeStyle={aStyle} activeClassName='active' to='/clock'>3D Clock</IndexLink></li>&nbsp;
+                   </ul>
                     </div>
                 </div>
             </nav>

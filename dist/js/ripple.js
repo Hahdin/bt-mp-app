@@ -18,7 +18,7 @@ var ClearRippleTimers = () => {
     clearInterval(drawRipTimerInterval)
     clearInterval(disturbTimerInterval)
     canvas = null
-    console.log('cleared ripple')
+    //console.log('cleared ripple')
 
 }
 
@@ -48,7 +48,7 @@ function Ripple() {
     canvas.width = width;
     canvas.height = height;
     with (ctx) {
-        console.log('draw image')
+        //console.log('draw image')
         ctx.drawImage(img, 0, 0);
         restore();
     }
@@ -70,6 +70,8 @@ function Ripple() {
         ctx.putImageData(ripple, 0, 0);
     }
 
+
+    //my addition to the brew, this adds a circular ripple effect
     function DepthMap(dx, dy) {
         //add a sin wave to the bit shift
         wave = 8;
@@ -88,9 +90,6 @@ function Ripple() {
         riprad++;
         if (riprad > 6)
             riprad = 3;
-
-        //riprad = 3;
-
 
         for (var j = dy - riprad; j < dy + riprad; j++) {
             for (var k = dx - riprad; k < dx + riprad; k++) {
@@ -132,8 +131,6 @@ function Ripple() {
                     _ripplemap[_mapind + 1]) >> 1;
 
                 data -= _ripplemap[_newind];
-                //shift++;
-                //if (shift > 6)
                 shift = 3;//controls the amount of array shift, smaller will 'dissipate' faster
                 shift = (Math.random() * 5 + 1) << 0;
 
