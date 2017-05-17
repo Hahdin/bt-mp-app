@@ -33,8 +33,10 @@ class AboutSection extends Component {
                                    <a style={sty} href="https://nodejs.org/en/" target='_blank'> Node.js</a>
                        </p>
 
+
                     </div>
-                    <div className="col-sm-4">
+                    <div className="alert alert-success">The source code for this app can be found at <a href="https://github.com/Hahdin/bt-mp-app" target="_blank">Github.com</a></div>
+                <div className="col-sm-4">
                         <span className="glyphicon glyphicon-signal logo"></span>
                     </div>
                 </div>
