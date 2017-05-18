@@ -18,7 +18,7 @@ var PLAYERCOLLISIONDISTANCE = 20   // How many units away the player can get fro
 var clock
 var light1
 
-getPointerLock = () => {
+function getPointerLock() {
     document.onclick = function () {
         container.requestPointerLock()
     }
@@ -27,7 +27,7 @@ getPointerLock = () => {
 }
 
 // Switch the controls on or off
-lockChange = () => {
+function lockChange() {
     // Turn on controls
     if (document.pointerLockElement === container) {
         blocker.style.display = "none"
@@ -40,13 +40,13 @@ lockChange = () => {
     }
 }
 
-WellPath = () => {
+function WellPath() {
     console.log('wellpath')
     getPointerLock()
     InitWp()
 }
 
-InitWp = () => {
+function InitWp() {
     console.log('init wellpath')
     clock = new THREE.Clock();
     scene = new THREE.Scene();
@@ -98,7 +98,7 @@ InitWp = () => {
 
 }
 
-animateWp = () => {
+function animateWp() {
     requestAnimationFrame(animateWp);
     //do stuff
     var delta = clock.getDelta();
@@ -106,27 +106,27 @@ animateWp = () => {
     renderWp()
 
 }
-renderWp = () => {
+function renderWp() {
     //do stuff
     renderer.render(scene, camera)
 
 }
 
-onWindowResize = () => {
+function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 
 }
 
-addLights = () => {
+function addLights() {
     var lightOne = new THREE.DirectionalLight(0xffffff, 1);
     lightOne.castShadow = true;
     lightOne.position.set(1, 1000, 1);
     scene.add(lightOne);
 }
 
-createGround = () => {
+function createGround() {
     floorMat = new THREE.MeshStandardMaterial({
         roughness: 0.8,
         color: 0xffaaaa,

@@ -14,7 +14,7 @@ var img = new Image()
 img.src = "/images/BT.jpg";
 img.width = 475; img.height = 271;
 
-var ClearRippleTimers = () => {
+function ClearRippleTimers() {
     clearInterval(drawRipTimerInterval)
     clearInterval(disturbTimerInterval)
     canvas = null
