@@ -1,6 +1,9 @@
 {
   "name": "bt-mpa",
   "version": "1.0.0",
+   "engines": {
+    "node": "6.11.1"
+  },
   "description": "Multi Page Web App Demo",
   "main": "server.js",
     "scripts": {
